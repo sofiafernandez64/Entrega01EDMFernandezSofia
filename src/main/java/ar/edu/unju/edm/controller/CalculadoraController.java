@@ -27,7 +27,7 @@ Calculadora unaCalculadora;
 		unaCalculadora.setA(Integer.valueOf(num1));
 		unaCalculadora.setB(num2);
 		
-		float resultadoSuma = unaCalculadora.sumarDosnumeros();
+		float resultadoSuma = unaCalculadora.sumar();
 		
 		ModelAndView modelView = new ModelAndView("resultado");
 		modelView.addObject("resultadoSuma", resultadoSuma);
@@ -40,7 +40,7 @@ Calculadora unaCalculadora;
 		unaCalculadora.setA(Integer.valueOf(num1));
 		unaCalculadora.setB(num2);
 		
-		float resultadoResta = unaCalculadora.restaDosNumeros();
+		float resultadoResta = unaCalculadora.restar();
 		
 		ModelAndView modelView = new ModelAndView("resultado");
 		modelView.addObject("resultadoResta", resultadoResta);
@@ -53,7 +53,7 @@ Calculadora unaCalculadora;
 		unaCalculadora.setA(Integer.valueOf(num1));
 		unaCalculadora.setB(num2);
 		
-		float resultadoMultiplicacion = unaCalculadora.multiplicarDosNumeros();
+		float resultadoMultiplicacion = unaCalculadora.multiplicar();
 		
 		ModelAndView modelView = new ModelAndView("resultado");
 		modelView.addObject("resultadoMultiplicacion", resultadoMultiplicacion);
@@ -66,7 +66,7 @@ Calculadora unaCalculadora;
 		unaCalculadora.setA(Integer.valueOf(num1));
 		unaCalculadora.setB(num2);
 		
-		float resultadoDivision = unaCalculadora.dividirDosnumeros();
+		float resultadoDivision = unaCalculadora.dividir();
 		
 		ModelAndView modelView = new ModelAndView("resultado");
 		modelView.addObject("resultadoDivision", resultadoDivision);
@@ -86,8 +86,8 @@ Calculadora unaCalculadora;
 		nuevaCalculadora.setA(num1);
 		nuevaCalculadora.setB(num2);
 
-		System.out.println("El resultado de la suma: " + nuevaCalculadora.sumarDosnumeros() );
-	    System.out.println("El resultado de la division: " + nuevaCalculadora.dividirDosnumeros());
+		System.out.println("El resultado de la suma es: " + nuevaCalculadora.sumar() );
+	    System.out.println("El resultado de la division es: " + nuevaCalculadora.dividir());
 		
 		}
 }

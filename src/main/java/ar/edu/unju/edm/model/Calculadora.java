@@ -13,27 +13,27 @@ public class Calculadora {
 		
 	}
 
-	public float sumarDosnumeros() {
+	public float sumar() {
 		float suma;
 		suma = a + b;
 		return suma;
 
 	}
 
-	public float restaDosNumeros() {
+	public float restar() {
 		float resta;
 		resta = a - b;
 		return resta;
 	}
 
-	public float multiplicarDosNumeros() {
+	public float multiplicar() {
 		float multiplicacion;
-		multiplicacion = a * b;
+		multiplicacion = a*b;
 		return multiplicacion;
 	}
 
 	
-	public float dividirDosnumeros() {
+	public float dividir() {
 
 		float division;
 		division = 0;
@@ -64,19 +64,21 @@ public class Calculadora {
 	}
 
 	
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
-			return true;
+		return true;
 		if (obj == null)
-			return false;
+		return false;
 		if (getClass() != obj.getClass())
-			return false;
+		return false;
 		Calculadora other = (Calculadora) obj;
 		if (a != other.a)
-			return false;
+		return false;
 		if (b != other.b)
-			return false;
+		return false;
 		return true;
 	}
 
