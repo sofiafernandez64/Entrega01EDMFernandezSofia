@@ -81,7 +81,7 @@ Calculadora unaCalculadora;
 		num1 = 65;
 		num2 = 8;
 		
-		
+
 		Calculadora nuevaCalculadora = new Calculadora ();
 		nuevaCalculadora.setA(num1);
 		nuevaCalculadora.setB(num2);
