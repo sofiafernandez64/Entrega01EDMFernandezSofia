@@ -9,7 +9,7 @@ public class FernandezSofiaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FernandezSofiaApplication.class, args);
 		
-		System.out.println("potators WITH CHIPS AND HMMM");
+		System.out.println("hello");
 	}
 
 }
